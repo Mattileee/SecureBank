@@ -1,0 +1,9 @@
+import express from 'express';
+import signup from './signup'; // Make sure this path is correct
+
+const router = express.Router();
+router.use('/signup', signup);
+
+export default router;
+// This code sets up an Express router that uses the signup route defined in the signup module.
+// Make sure to adjust the import path for `signup` based on your project structure.
